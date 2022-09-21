@@ -1,8 +1,16 @@
 import React from 'react';
 import {Box, Button, Heading, HStack, Image, Stack} from 'native-base';
+import {useSetRecoilState} from 'recoil';
 import {IProductItemProps} from './types';
+import {cartState} from '../../state/atoms/cart';
 
 const ProductItem = ({product}: IProductItemProps) => {
+  const setCartState = useSetRecoilState(cartState);
+
+  const handleAddCartItem = () => {
+    setCartState(currentCartState => [...currentCartState, product]);
+  };
+
   return (
     <Box
       rounded="lg"
@@ -38,7 +46,10 @@ const ProductItem = ({product}: IProductItemProps) => {
         </Stack>
         <HStack alignItems="center" space={4} justifyContent="space-between">
           <HStack alignItems="center">
-            <Button backgroundColor="violet.700" size="sm">
+            <Button
+              backgroundColor="violet.700"
+              size="sm"
+              onPress={handleAddCartItem}>
               Adicionar ao carrinho
             </Button>
           </HStack>

@@ -2,9 +2,12 @@ import {useNavigation} from '@react-navigation/native';
 import {Badge, VStack, Pressable} from 'native-base';
 import React from 'react';
 import Icon from 'react-native-vector-icons/AntDesign';
+import {useRecoilValue} from 'recoil';
+import {counterCartItems} from '../../state/atoms/cart/selectors';
 
 const CartIcon = () => {
   const navigation = useNavigation();
+  const cartItemsCount = useRecoilValue(counterCartItems);
 
   const hadleGoToCart = () => {
     navigation.navigate('Cart');
@@ -24,7 +27,7 @@ const CartIcon = () => {
           _text={{
             fontSize: 10,
           }}>
-          2
+          {cartItemsCount}
         </Badge>
         <Icon name="shoppingcart" size={28} color="#FFFFFF" />
       </VStack>
