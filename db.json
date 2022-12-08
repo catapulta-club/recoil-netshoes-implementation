@@ -1,0 +1,32 @@
+{
+    "shoes": [
+        {
+            "id": "00ca7b39-28c2-46cf-b555-18b56b9c2d7a",
+            "title": "Tênis Adidas Runfalcon 2.0",
+            "value": "R$ 227,32",
+            "type": "Tênis",
+            "image": "https://i.zst.com.br/thumbs/12/10/33/1952322327.jpg"
+        },
+        {
+            "id": "41491c5c-ceec-440e-89ef-19d63ad781d7",
+            "title": "Tênis Adidas Runfalcon 3.0",
+            "value": "R$ 267,49",
+            "type": "Tênis",
+            "image": "https://i.zst.com.br/thumbs/12/0/16/2068798534.jpg"
+        },
+        {
+            "id": "5365277c-a0a5-4b72-909b-1d6667f1b529",
+            "title": "Tênis Adidas Runfalcon 2.0",
+            "value": "R$ 227,32",
+            "type": "Tênis",
+            "image": "https://i.zst.com.br/thumbs/12/10/33/1952322327.jpg"
+        },
+        {
+            "id": "06898e1f-5ffb-40e3-a1a9-cc4a434a0428",
+            "title": "Tênis Adidas Runfalcon 2.0",
+            "value": "R$ 227,32",
+            "type": "Tênis",
+            "image": "https://i.zst.com.br/thumbs/12/10/33/1952322327.jpg"
+        }
+    ]
+}
