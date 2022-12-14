@@ -12,7 +12,12 @@ const ProductItem = ({product}: IProductItemProps) => {
       borderWidth="1"
       flex={1}>
       <Box borderBottomColor="gray.200" borderBottomWidth="1">
-        <Image source={product.image} alt="image" width="100%" height="140px" />
+        <Image
+          source={{uri: product.image}}
+          alt="image"
+          width="100%"
+          height="140px"
+        />
         <Box
           bg="violet.500"
           _dark={{
